@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="st.css">
+    <script type="text/javascript">
+    function addb(){
+       var name=window.location.search;
+       var myWin= window.open("addblog.html"+name);
+    }
+    </script>
+   <style>
+       iframe{
+        width:82.5%;
+        height: 95%;
+       }
+        
+        @media screen and (min-height: 400px){
+            iframe{
+                width:100%;
+            }     
+        }
+        @media screen and (min-height: 400px){
+            iframe{
+                width:100%;
+            }     
+        }
+
+   </style>
+</head>
+<body>
+    <div class="con">
+    <h1>Blogs</h1>
+    <div class="nav">  
+        <h2 onclick="document.getElementById('main').src='SeeBlogindex.html'">✨ See Latest</h2>
+        <h2 onclick="document.getElementById('main').src='SeeTrending.html'">😍 See Trending</h2>
+        <h2 onclick="addb()">🖋 Add A Blog</h2>
+       
+   </div>
+   <iframe id="main" src="SeeBlogindex.html" frameborder=none>
+
+</iframe>
+</div>
+</body>
+</html>
